@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #282c34;
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+.movie-list {
+  overflow: hidden; 
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-gap: 50px; 
+  justify-content: center;
+}
+
+.movie-card {
+  overflow: hidden; 
+  border: 1px solid #ddd;
+  padding: 50px;
+  max-width: 500px;
+  margin: 50px;
+  text-align: center; 
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+
+button {
+  background-color: #000303; 
+  color: white; 
+  padding: 10px;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 60px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #4fa3d1; 
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: rgb(68, 3, 3);
+  padding: 20px;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content button {
+  margin-top: 10px;
+}
